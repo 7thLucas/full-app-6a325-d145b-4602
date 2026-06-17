@@ -1,0 +1,72 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; gap: 3rem; }
+.mode-portrait .sl-layout { flex-direction: column; gap: 1.5rem; }
+.mode-landscape .sl-left { width: 52%; }
+.mode-landscape .sl-right { width: 48%; }
+.mode-portrait .sl-left { width: 100%; }
+.mode-portrait .sl-right { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <span class="text-xs font-bold tracking-widest uppercase text-rose-500">The Idea</span>
+      <h2 class="text-4xl font-extrabold text-slate-900 mt-2 leading-tight">Why this page exists</h2>
+    </div>
+
+    <!-- Split -->
+    <div class="sl-layout flex flex-1">
+      <!-- Problem -->
+      <div class="sl-left flex flex-col justify-start">
+        <div class="bg-slate-900 rounded-2xl p-8 h-full flex flex-col justify-between">
+          <div>
+            <span class="inline-block text-xs font-bold tracking-widest uppercase text-rose-400 mb-4">The Feeling</span>
+            <p class="text-2xl font-bold text-white leading-snug mb-4">
+              Some things are too important to say in a text message.
+            </p>
+            <p class="text-slate-400 text-base leading-relaxed">
+              Words disappear in feeds and chats. A feeling this big deserves its own space — something she can return to, anytime.
+            </p>
+          </div>
+          <div class="mt-6">
+            <img
+              src="http://localhost:8001/common/image-generation?prompt=soft%20romantic%20pink%20and%20red%20heart%20minimal%20dark%20background%20elegant%20glow"
+              alt=""
+              class="w-full rounded-xl object-cover"
+              style="height: 110px;"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-right flex flex-col justify-start">
+        <div class="bg-rose-50 border border-rose-100 rounded-2xl p-8 h-full flex flex-col justify-between">
+          <div>
+            <span class="inline-block text-xs font-bold tracking-widest uppercase text-rose-500 mb-4">The Answer</span>
+            <p class="text-2xl font-bold text-slate-900 leading-snug mb-4">
+              A minimal page built for one person — Veronica.
+            </p>
+            <p class="text-slate-600 text-base leading-relaxed">
+              Two sections, zero distraction. A greeting. A declaration. Exactly enough, nothing more. Shared with a single link.
+            </p>
+          </div>
+          <div class="mt-6 space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></div>
+              <span class="text-slate-700 text-sm font-medium">Hero: "Halo Veronica"</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></div>
+              <span class="text-slate-700 text-sm font-medium">Declaration: "I Love You"</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-rose-300 flex-shrink-0"></div>
+              <span class="text-slate-600 text-sm">One link. Opens anywhere.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
