@@ -1,0 +1,1 @@
+buatin simple 1 landing page sederhana 2 section aja, tulisannya hero nya itu Halo Veronica, section 2 I Love You.
